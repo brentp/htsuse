@@ -14,3 +14,9 @@ To get the first 1K records:
 ```
 	grabvcf $VCF 1 1000
 ```
+
+depthwithends
+-------------
+
+contains `bam2depth` which adds the count of reads ending and starting at a given position. 
+useful for SVs. this supplements the information from `samtools depth` which only reports depth.
